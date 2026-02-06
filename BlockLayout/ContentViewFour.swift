@@ -1,5 +1,5 @@
 //
-//  ContentViewTwo.swift
+//  ContentViewFour.swift
 //  BlockLayout
 //
 //  Created by Steven Xia on 2026/2/6.
@@ -7,21 +7,20 @@
 
 import SwiftUI
 
-struct ContentViewTwo: View {
+struct ContentViewFour: View {
     var body: some View {
-        VStack
+        HStack()
         {
             Rectangle()
-            HStack{
-                Rectangle()
+            VStack()
+            {
                 Rectangle()
                 Rectangle()
             }
-            .containerRelativeFrame(.vertical, count: 3, span: 2, spacing: 0)
         }
     }
 }
 
 #Preview {
-    ContentViewTwo()
+    ContentViewFour()
 }
